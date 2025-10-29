@@ -1,82 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JSON Tree Visualizer</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f3f3f3;
-      margin: 0;
-      padding: 20px;
-    }
-    textarea {
-      width: 100%;
-      height: 150px;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-    }
-    button {
-      margin-top: 10px;
-      padding: 10px 15px;
-      border: none;
-      background-color: #007bff;
-      color: white;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-    #output {
-      margin-top: 20px;
-      background: white;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    }
-    ul {
-      list-style-type: none;
-      padding-left: 20px;
-    }
-  </style>
-</head>
-<body>
-  <h1>JSON Tree Visualizer</h1>
-  <textarea id="jsonInput" placeholder="Enter JSON here..."></textarea>
-  <br />
-  <button onclick="visualizeJSON()">Visualize</button>
-
-  <div id="output"></div>
-
-  <script>
-    function visualizeJSON() {
-      const input = document.getElementById('jsonInput').value;
-      const output = document.getElementById('output');
-      output.innerHTML = '';
-
-      try {
-        const json = JSON.parse(input);
-        const tree = createTree(json);
-        output.appendChild(tree);
-      } catch (err) {
-        output.innerHTML = '<p style="color:red;">Invalid JSON format!</p>';
-      }
-    }
-
-    function createTree(obj) {
-      const ul = document.createElement('ul');
-      for (let key in obj) {
-        const li = document.createElement('li');
-        if (typeof obj[key] === 'object' && obj[key] !== null) {
-          li.textContent = key + ':';
-          li.appendChild(createTree(obj[key]));
-        } else {
-          li.textContent = key + ': ' + obj[key];
-        }
-        ul.appendChild(li);
-      }
-      return ul;
-    }
-  </script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JSON Tree Visualizer</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
 </html>
