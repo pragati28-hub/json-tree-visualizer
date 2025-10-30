@@ -4,7 +4,7 @@ An interactive web app built with React, Tailwind CSS, and React Flow that visua
 
 Live Demo
 
-🔗 Click here to view the deployed site
+🔗 Click here to view the deployed site https://json-tree-visualizer1.netlify.app/
 
  Features
 
@@ -22,6 +22,5 @@ Visualization: React Flow
 
 Deployment: Netlify
 
- Screenshot
-[App Screenshot](./screenshot.png)
+
 
