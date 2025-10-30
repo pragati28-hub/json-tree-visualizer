@@ -1,30 +1,27 @@
-JSON Tree Visualizer
-Project Overview
+ JSON Tree Visualizer
 
-The JSON Tree Visualizer is a simple web-based tool that helps users visualize JSON data in a structured tree format. It allows users to input JSON, validate it, and explore its structure interactively using a graphical interface built with React Flow.
+An interactive web app built with React, Tailwind CSS, and React Flow that visualizes JSON data in a beautiful tree structure.
 
-FEATURES
+Live Demo
 
-1.JSON Input: Users can paste or type JSON data manually.
+🔗 Click here to view the deployed site
 
-2.Validation: Displays an error message if the JSON format is invalid.
+ Features
 
-3.Tree Visualization: Converts JSON data into a visual tree using React Flow.
+1. Parse and visualize JSON data as an expandable tree
+2. Search within the JSON structure
+3. Light/Dark mode toggle
+4. Responsive and clean UI
+5.Built using React + React Flow
 
-4.Search Functionality: Allows searching for specific keys or values in the JSON structure.
+ Tech Stack
 
-5.Copy Path: Clicking on a node copies its JSON path.
+Frontend: React, Tailwind CSS
 
-6.Clear All: Clears both input and visualization areas.
+Visualization: React Flow
 
-7.Zoom and Pan: Helps navigate through large JSON trees.
+Deployment: Netlify
 
-8.Theme Toggle: Switch between light and dark modes.
+ Screenshot
+[App Screenshot](./screenshot.png)
 
-TECHNOLOGIES
-
-1.React JS
-
-2.React Flow
-
-3.HTML, CSS, and JavaScript (ES6)
